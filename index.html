@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário 2</title>
+    <link rel="stylesheet" href="formu2.css">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
 <input type="tel" id="fone" name="fone" required pattern="[0-9]{2} [0-9]{5}-[0-9{4}]" placeholder="11 99999-9999">
         </div>
         <div>
-            <label for="hora-desejada">hora desejada</label>
+            <label for="hora-desejada">Hora desejada</label>
             <input type="time" id="hora-desejada" name="hora-desejada" required>
         </div>
         <div>
@@ -42,7 +43,7 @@
             <label for="filhos">Quantidade Filhos</label>
             <input type="number" id="filhos" name="filhos">
         </div>
-        <div>
+        <div class="peso">
             <label for="peso">Peso</label>
             0 <input type="range" id="peso" name="peso" min="0" max="200"> 200
         </div>
@@ -54,12 +55,12 @@
                 <option value="PB">PB</option>
             </select>
         </div>
-        <div>
+        <div class="radio">
             <p>Grau de Estudo</p>
             <input type="radio" id="medio" name="fav_language" value="Ensino Médio">
             <label for="medio">Ensino Médio</label><br>
             <input type="radio" id="faculdade" name="fav_language" value="Ensino Superior">
-            <label for="faculdade">Ensino Superior</label>
+            <label for="faculdade">Ensino Superior</label><br>
             <input type="radio" id="mestrado" name="fav_language" value="Mestrado">
             <label for="mestrado">Mestrado</label>
         </div>

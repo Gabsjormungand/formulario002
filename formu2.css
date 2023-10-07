@@ -1,0 +1,70 @@
+form{
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 400px;
+    /* Para ver bordas do formulário */
+    padding: 2em;
+    border: 5px solid #6200ffa1;
+    border-radius: 4em;
+}
+
+form div+div {
+    margin-top: 1em;
+}
+
+label {
+    /*Para ter certaza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas*/
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+input, textarea {
+    /* Para certificar-se que todos os campos de texto têm as mesma configurações de fonte. Por padrão, textareas ter uma monospace*/
+    font: 1em sans-serif;
+
+    /* Para dar o mesmo tamanho a todos campo de texto */
+    width: 200px;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 2px solid #6200ff;
+}
+
+input:focus, textarea:focus {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: #000000;
+}
+
+textarea {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar alqun texto */
+    height: 5em;
+
+    /* Para dar espaço suficientes redimensionarem qualquer textarea verticalmente. ele não funciona em todos os browsers */
+    resize: vertical;
+}
+
+.button {
+    /* Para posicionar os botôes para a mesma posição dos campos de texto */
+    padding-left: 90px;
+    /* mesmo tamanho que os elementos do tipo label */
+}
+
+button {
+    /* Esta margem estra representa aproximadamente o mesmo espaço que o espaço entre as labels e os sues campos de texto*/
+    margin-left: 0.5em;
+}
+input[type=radio] {
+    width: auto;
+}
+.radio label{
+    text-align: left;
+    width: 190px;
+}
+.radio{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
